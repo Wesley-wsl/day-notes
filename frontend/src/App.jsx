@@ -1,9 +1,11 @@
-import './App.css';
+import Sidebar from './components/Sidebar';
+import './styles/global.css';
 
 function App() {
   return (
-    <f>
-    </f>
+    <div id="app">
+        <Sidebar />
+    </div>
   );
 }
 
