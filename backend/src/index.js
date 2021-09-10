@@ -4,7 +4,7 @@ import cors from "cors";
 import "./config/dbConfig.js";
 
 const app = express();
-const PORT = 3000;
+const PORT = 3333;
 
 app.use(cors());
 app.use(express.json());
