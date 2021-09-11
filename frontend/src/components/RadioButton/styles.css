@@ -1,0 +1,9 @@
+.radioOptions {
+    color: #acacac;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
