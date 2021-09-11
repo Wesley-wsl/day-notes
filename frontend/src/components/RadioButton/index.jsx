@@ -12,21 +12,36 @@ const CustomRadio = withStyles({
     checked: {},
 })((props) => <Radio color="default" {...props} />);
 
-export default function RadioButton() {
+export default function RadioButton({ handleChange, selectedValue }) {
     return (
         <>
             <div className="radioOptions">
                 <div>
                     {" "}
-                    <CustomRadio /> <span>Todos</span>
+                    <CustomRadio
+                        checked={selectedValue === "all"}
+                        onChange={(e) => handleChange(e.target)}
+                        value="all"
+                    />{" "}
+                    <span>Todos</span>
                 </div>
                 <div>
                     {" "}
-                    <CustomRadio /> <span>Prioridade</span>
+                    <CustomRadio
+                        checked={selectedValue === "true"}
+                        onChange={(e) => handleChange(e.target)}
+                        value={true}
+                    />{" "}
+                    <span>Prioridade</span>
                 </div>
                 <div>
                     {" "}
-                    <CustomRadio /> <span>Normal</span>
+                    <CustomRadio
+                        checked={selectedValue === "false"}
+                        onChange={(e) => handleChange(e.target)}
+                        value={false}
+                    />{" "}
+                    <span>Normal</span>
                 </div>
             </div>
         </>
