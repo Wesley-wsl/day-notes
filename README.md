@@ -41,6 +41,10 @@ Day-notes is a notes book project full-stack to control notes in database. The u
 
 #### Pre-requisites:
 You must have the tools installed:  <a href="">Git</a>, <a href="">Node.js</a>.
+You must have a acount in <a href="https://www.mongodb.com/pt-br">MongoDB</a> to get a connection string.
+
+Create a file with name: .env, and paste your connection string from MongoDB (Your database) in formate bellow:
+REACT_APP_MONGODB_URI=YourStringHere
 
 <pre>
 1 - In the terminal, clone the project:
@@ -60,7 +64,7 @@ $ yarn start
 ou
 $ npm run start
 
-# Do the same process from 3 entering the backend folder. 
+# Do the same process from step three entering the backend folder.
 
 </pre>
 
