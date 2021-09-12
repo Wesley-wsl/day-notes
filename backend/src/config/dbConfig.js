@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
+import dotenv from 'dotenv'
 
-const dbConfig =
-    "mongodb+srv://dbUser:Userdb@cluster0.rpy2o.mongodb.net/annotations?retryWrites=true&w=majority";
+dotenv.config()
+
+const dbConfig = process.env.REACT_APP_MONGODB_URI;
 
 const connection = mongoose.connect(dbConfig, {
     useNewUrlParser: true,
