@@ -6,9 +6,9 @@
 
 <hr/>
 
-## Application deploy with netlify: :dash:
+## Application deploy with heroku and netlify: :dash:
 
-> 
+> day-notes.netlify.app
 
 ## 📜 About the Project
 
