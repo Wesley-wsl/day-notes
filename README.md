@@ -1,4 +1,4 @@
-# Countries-app
+# day-notes
 
 ## Demo 📸
 
